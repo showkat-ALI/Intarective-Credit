@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Section</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black	">
+    <header>
+    <h1> this is h1</h1>
+        <section class="grid grid-cols-2 justify-items-center gap-9">
+            <div class="bg-indigo-800 rounded text-white p-28">
+                <div class="grid grid-cols-1  gap-8">
+                    <h4>Hello</h4>
+                    <h2 id="user-name">User Name</h2>
+                    <div>
+                        <box-icon type='solid' name='phone'></box-icon>
+                        <span> + 123434556</span>
+                    </div>
+                    <div class="mb-5">
+                        <box-icon name='user'></box-icon>
+                        <span>Dash@gmail.com</span>
+                    </div>
+
+                </div>
+                
+                <hr>
+                <div class="my-8">
+                    <span class="mr-5">Adress</span>
+                    <span>xyz ghi vnjjdj</span>
+
+                </div>
+                <span class="mr-5">  Total tags</span>
+                <span>103 times </span>
+                <div>
+
+                </div>
+
+
+            </div>
+            <div class="bg-indigo-800 rounded text-white p-28">
+                <h1>Wallet</h1>
+                <hr class="my-5">
+                <h1>Available BTC </h1>
+                <h4>0.0230145 BTC</h4>
+                <div class="grid grid-cols-2 gap-8 my-5">
+                    <div>
+                        <h1>Dposite amount</h1>
+                        <h2> <span id="deposite-showcase">00</span>USD</h2>
+                    </div>
+
+                    <div>
+                        <h1 id="deposite-error-message">Please deposite above 0usd</h1>
+
+                        <h1>
+                            Add this month</h1>
+
+                        <input id="deposite-input" class="border-2 rounded  py-1 px-8 mb-6 text-black" placeholder=" Enter Deposite Ammount" type="text"> 
+                        <button id="deposite" class=" rounded py-1 px-8 mb-6 bg-indigo-500 text-white bold">Deposite</button>
+
+
+                    </div>
+                    <div>
+
+                        <h1>withdraw amount</h1>
+                        <h2> <span id="withdraw-showcase">00</span>USD</h2>
+                    </div>
+                    <div>
+                        <h1 id="withdraw-error-message">Please Input Less Amout.</h1>
+                        <h1 id="withDraw-error-message">withdraw This Month</h1>
+                        <input id="withdraw-input" class="border-2 rounded  py-1 px-8 mb-6 text-black" placeholder=" Enter withdraw Ammount" type="text"> 
+                        <button id="withdraw" class=" rounded py-1 px-8 mb-6 bg-indigo-500 text-white bold">withdraw</button>
+                    </div>
+                    <div>
+                        <h1>Vat</h1>
+                        <h1>00</h1>
+                    </div>
+                    <div>
+                        <h1>total equity</h1>
+                        <h1>
+                            <span id="total-amount">0</span> USD
+
+                        </h1>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/signing.js"></script>
+
+
+</body>
+</html>
